@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>lazyload</title>
+    <script src="./check.js"></script>
+    <script src="./observer.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .img-container {
+            min-height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/12.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/13.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/14.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/15.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/16.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/17.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/18.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/19.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/20.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/21.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/22.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/23.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/24.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/25.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/26.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/27.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/28.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/29.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/30.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/31.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/32.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/33.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/34.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/35.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/36.jpg">
+    </div>
+    <div class="img-container">
+        <img class="pictures" data-src="./detailImg/37.jpg">
+    </div>
+</div>
+<script>
+    const imgList = Array.prototype.slice.call(document.querySelectorAll('.pictures'));
+
+    // window.onload = checkImgs(imgList);
+    // window.onscroll = imgLoad(imgList);
+
+    // observer
+    lazyLoad(imgList)
+</script>
+</body>
+
+</html>
